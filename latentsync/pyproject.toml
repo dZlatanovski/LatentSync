@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"] # Or other build system requirements
+build-backend = "setuptools.build_meta"  # Or other build backend
+
+[project]
+name = "latentsync"
+version = "0.0.1"
+dependencies = [
+    "torch==2.4.1",
+    "torchvision==0.19.1",
+    "diffusers==0.32.2",
+    "transformers==4.48.0",
+    "huggingface-hub==0.25.2",
+    "decord==0.6.0",
+    "accelerate==0.26.1",
+    "einops==0.7.0",
+    "omegaconf==2.3.0",
+    "opencv-python==4.9.0.80",
+    "mediapipe==0.10.11",
+    "python_speech_features==0.6",
+    "librosa==0.10.1",
+    "scenedetect==0.6.1",
+    "ffmpeg-python==0.2.0",
+    "lpips==0.1.4",
+    "face-alignment==1.4.1",
+    "gradio==5.12.0",
+    "numpy==1.26.4",
+]
+description = """
+A wrapper package for latentsync for the sole purpose of being able to install
+it with pip from github. Note: don't forget to add the
+ --extra-index-url https://download.pytorch.org/whl/cu121 
+to your requirements.txt file or pip install flag when installing
+this package."""
