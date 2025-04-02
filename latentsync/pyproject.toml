@@ -32,3 +32,6 @@ it with pip from github. Note: don't forget to add the
  --extra-index-url https://download.pytorch.org/whl/cu121 
 to your requirements.txt file or pip install flag when installing
 this package."""
+
+[tool.setuptools.package-data]
+"latentsync" = ["whisper/**/*.npz", "whisper/**/*.json", "whisper/**/*.txt"]
